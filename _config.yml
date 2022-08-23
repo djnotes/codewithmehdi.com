@@ -24,13 +24,13 @@ description: >- # this means to ignore newlines until "baseurl:"
   My name is Mehdi Haghgoo. With me, you can learn to code and talk
   about programming and software. On codewithmehdi.com, you can find
   articles about development, software tricks, networking, and more
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://djnotes.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: IAmMehdiHaghgoo 
 github_username:  djnotes
 
 # Build settings
-theme: cotes2020/jekyll-theme-chirpy  
+theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
 
