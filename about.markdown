@@ -4,15 +4,18 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hi. My name is Mehdi Haghgoo. I started computer software education back in October 2008, and 
+I have been in the industry back and forth, more or less so far. I became more active in the field
+since 2016, when I started an Android development career.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+You can communicate with me through issues (if you see an issue in the posts),
+or you can use my profile Email address.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Here are my socials: 
 
-
-[jekyll-organization]: https://github.com/jekyll
+[Twitter](https://twitter.com/IAmMehdiHaghgoo)  
+[YouTube](https://youtube.com/MehdiHaghgoo)  
+[Telegram](https://t.me/codewithmehdi)  
+[LinkedIn](https://www.linkedin.com/in/mehdi-haghgoo-68576252)  
+[Facebook](https://www.facebook.com/codewithmehdi)  
+[Udemy Instructor Page](https://www.udemy.com/user/mehdi-haghgoo)

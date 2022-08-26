@@ -31,7 +31,7 @@ twitter_username: IAmMehdiHaghgoo
 github_username: djnotes 
 
 # Build settings
-theme: minima 
+theme: minima
 plugins:
   - jekyll-feed
 
