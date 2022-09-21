@@ -7,7 +7,7 @@ categories: Programming
 
 # How do I get started programming?
 
-![Puzzled Person](/assets/img/man-puzzled.png)
+![Puzzled Person](/assets/img/thinking.png)
 
 This is a simple question for beginner programmers, but does it have a simple answer.
 >How do I get started programming?  
