@@ -23,3 +23,7 @@ JetBrains Toolbox might be great for some people. But, I didn't like it. I prefe
 This article shows you how to convert your existing AS version installed throught Toolbox to a manually-managed version.
 Hope this helps.
 
+
+
+# Update 1
+The patch was downloaded, but failed to be applied! So, I have to download and install the new version manually :( That's the cost of not liking JB Toolbox and preferring the manual path. Still, I don't give up and persist, because JB Toolbox used to completely download the new version instead of patching it more than often.
