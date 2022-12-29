@@ -5,7 +5,7 @@ date: 2022-11-18
 categories: Programming
 ---
 
-# Is this important
+# Is this important?
 
 In case you have been using JetBrains Toolbox happily and enjoying it so far, you should probably skip reading this article.
 Otherwise, if you tried the toolbox and liked your old days of using the IDE and updating it inside the IDE - NOT THROUGH TOOLBOX - then you are in good company.
