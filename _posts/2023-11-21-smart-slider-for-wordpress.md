@@ -2,7 +2,7 @@
 layout: post
 title:  "Smart Slider for WordPress!"
 date:   2023-11-21 17:10
-categories: wordpress
+categories: Wordpress
 ---
 
 Smart Slider for WordPress is a WordPress plugin that allows you to create slides of different types on your WordPress site. I have tried MetaSlider before for creating slides on WordPress, and I have been happy with it until recently. After moving a local WordPress instance to a VPS, I updated the plugins and then found out that the slides didn't show correctly anymore. The photos of the slide would show up below each other. I tried fiddling around with the settings, but it sometimes showed errors while saving some settings, and with other settings that saved successfully, the display was not fixed. 
