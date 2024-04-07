@@ -15,3 +15,13 @@ for file in $(cat list.txt); do yt-dlp  -f bestvideo+bestaudio  --merge-output-f
 399 refers to 
 This works for YouTube, but you might be able to use it with other video hosting services as well.
 
+
+## Download a playlist
+You can also download a playlist with a similar method. For example, the following command downloads a complete YT playlist and saves them as mp4 files. Note that it also specifies formats with 480p resolution to be downloaded. 
+
+```
+yt-dlp -S "+height:480" -f "bv" --merge-output-format mp4 "https://example.com/playlist"
+``` 
+
+## Further reading
+[yt-dlp GitHub page](https://github.com/yt-dlp/yt-dlp/issues/8746#issuecomment-1849376866)
