@@ -128,3 +128,13 @@ connection.close()
 # Run the producer
 python3 client.py
 ```
+
+## See the management panel:
+
+If you did all the above steps, then the management panel is available at the following address: 
+
+```
+http://localhost:8080
+```
+
+Once you opened the page, you will be asked for username and password. Enter `myuser` and `mypass`, the same values entered in env.ini file, respectively for this. After being authenticated, you will be able to see Overview, Connections, Channels, Exchanges, Queues and Streams and Admin sections, each of which contains valuable information.
