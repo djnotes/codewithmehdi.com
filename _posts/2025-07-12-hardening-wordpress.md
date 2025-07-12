@@ -19,7 +19,7 @@ My WP hardening involves a several-step process (For NGINX):
 - Set ownership to a SSH user: sudo chown -R myuser:www-data \$DS
 - Set 755 permissions on directories: find \$DS -type d -exec chmod 755 {} \; 
 - Set 744 permissions on files:  find \$DS -type f -exec chmod 744 {} \;
-- Allow read, write and execute on uploads: chmod -R 775 \$DS/wp-content/{uploads,themes,plugins,upgrade}
+- Allow read, write and execute on uploads: chmod -R 775 \$DS/wp-content/{uploads,themes,plugins,upgrade,upgrade-temp-backup}
 
 ## Additional Notes
 -  with these permissions, it is not possible to upgrade WordPress core. It is recommended to perform core upgrade only manually 
