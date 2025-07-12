@@ -21,6 +21,53 @@ My WP hardening involves a several-step process (For NGINX):
 - Set 744 permissions on files:  find \$DS -type f -exec chmod 744 {} \;
 - Allow read, write and execute on uploads: chmod -R 775 \$DS/wp-content/{uploads,themes,plugins,upgrade,upgrade-temp-backup}
 
+## Further Hardening
+The permissions we set previously allow some code to be executed in special dirs i.e. uploads, themes, plugins, upgrade, etc. 
+To contain this threat, we can add further control to prevent any code from execution in this dirs. In NGINX's server block for this virtual host, add: 
+
+```
+# Deny PHP execution in wp-content/uploads
+location ~* ^/wp-content/uploads/.*\.php$ {
+    deny all;
+}
+
+# Deny PHP execution in wp-content/plugins
+# This is typically good practice, but be aware some plugins
+# *might* legitimately place PHP files here that need to run.
+# Assess carefully.
+location ~* ^/wp-content/plugins/.*\.php$ {
+    deny all;
+}
+
+# Deny PHP execution in wp-content/themes
+# Similar to plugins, themes could have PHP files needing execution.
+# Use with caution and test thoroughly.
+location ~* ^/wp-content/themes/.*\.php$ {
+    deny all;
+}
+
+# Deny PHP execution in wp-content/upgrade (temporary files during upgrades)
+location ~* ^/wp-content/upgrade/.*\.php$ {
+    deny all;
+}
+
+# Add other writable directories as needed, e.g., wp-content/cache
+location ~* ^/wp-content/cache/.*\.php$ {
+    deny all;
+}
+```
+
+In Apache, you can create a .htaccess file under the uploads dir or any other dir you are concerned about with this content:
+
+```
+<Files *.php>
+Deny from all
+</Files>
+<FilesMatch "(?i)\.(php|phtml|php3|php4|php5|php7|phps)$">
+Deny from all
+</FilesMatch>
+```
+
 ## Additional Notes
 -  with these permissions, it is not possible to upgrade WordPress core. It is recommended to perform core upgrade only manually 
 under a user with sufficient permissions on the core files, possibly by using WP CLI or manual copy and move operations.
